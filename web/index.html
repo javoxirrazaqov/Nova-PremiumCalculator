@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova — Premium Calculator</title>
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <div class="space-background">
+
+    <div class="stars"></div>
+
+    <div class="planet planet--one"></div>
+    <div class="planet planet--two"></div>
+
+    <div class="orbit orbit--one"></div>
+    <div class="orbit orbit--two"></div>
+    <div class="orbit orbit--three"></div>
+
+    <div class="space-dot dot--one"></div>
+    <div class="space-dot dot--two"></div>
+    <div class="space-dot dot--three"></div>
+    <div class="space-dot dot--four"></div>
+
+</div>
+
+        <!-- Background decorations -->
+        <div class="orb orb--pink"></div>
+        <div class="orb orb--purple"></div>
+
+        <section class="calculator">
+
+            <!-- Header -->
+            <header class="calculator__header">
+
+                <div class="brand">
+                    <div class="brand__icon">
+                        N
+                    </div>
+
+                    <div>
+                        <h1>NOVA</h1>
+                        <span>SMART CALCULATOR</span>
+                    </div>
+                </div>
+
+                <div class="status">
+                    <span class="status__dot"></span>
+                    ONLINE
+                </div>
+
+            </header>
+
+
+            <!-- Display -->
+            <section class="display">
+
+                <div class="display__top">
+                    <span id="displayLabel">READY</span>
+
+                    <button
+                        class="history-toggle"
+                        id="historyToggle"
+                        aria-label="Open history"
+                    >
+                        HISTORY
+                    </button>
+                </div>
+
+                <div
+                    class="display__expression"
+                    id="expression"
+                >
+                    0
+                </div>
+
+                <div
+                    class="display__result"
+                    id="result"
+                >
+                    0
+                </div>
+
+            </section>
+
+
+            <!-- Calculator body -->
+            <div class="calculator__body">
+
+                <!-- Buttons -->
+                <section class="keypad">
+
+                    <button
+                        class="key key--function"
+                        data-action="clear"
+                    >
+                        AC
+                    </button>
+
+                    <button
+                        class="key key--function"
+                        data-action="delete"
+                    >
+                        DEL
+                    </button>
+
+                    <button
+                        class="key key--operator"
+                        data-value="%"
+                    >
+                        %
+                    </button>
+
+                    <button
+                        class="key key--operator"
+                        data-value="/"
+                    >
+                        ÷
+                    </button>
+
+
+                    <button class="key" data-value="7">7</button>
+                    <button class="key" data-value="8">8</button>
+                    <button class="key" data-value="9">9</button>
+
+                    <button
+                        class="key key--operator"
+                        data-value="*"
+                    >
+                        ×
+                    </button>
+
+
+                    <button class="key" data-value="4">4</button>
+                    <button class="key" data-value="5">5</button>
+                    <button class="key" data-value="6">6</button>
+
+                    <button
+                        class="key key--operator"
+                        data-value="-"
+                    >
+                        −
+                    </button>
+
+
+                    <button class="key" data-value="1">1</button>
+                    <button class="key" data-value="2">2</button>
+                    <button class="key" data-value="3">3</button>
+
+                    <button
+                        class="key key--operator"
+                        data-value="+"
+                    >
+                        +
+                    </button>
+
+
+                    <button
+                        class="key key--zero"
+                        data-value="0"
+                    >
+                        0
+                    </button>
+
+                    <button
+                        class="key"
+                        data-value="."
+                    >
+                        .
+                    </button>
+
+                    <button
+                        class="key key--equal"
+                        data-action="equal"
+                    >
+                        =
+                    </button>
+
+                </section>
+
+
+                <!-- History -->
+                <aside
+                    class="history"
+                    id="history"
+                >
+
+                    <div class="history__header">
+
+                        <div>
+                            <span class="history__label">
+                                CALCULATIONS
+                            </span>
+
+                            <h2>History</h2>
+                        </div>
+
+                        <button
+                            class="history__close"
+                            id="historyClose"
+                        >
+                            ×
+                        </button>
+
+                    </div>
+
+                    <div
+                        class="history__list"
+                        id="historyList"
+                    >
+                        <div class="history__empty">
+                            <span>∑</span>
+                            <p>No calculations yet</p>
+                        </div>
+                    </div>
+
+                    <button
+                        class="history__clear"
+                        id="clearHistory"
+                    >
+                        CLEAR HISTORY
+                    </button>
+
+                </aside>
+
+            </div>
+
+
+            <!-- Footer -->
+            <footer class="calculator__footer">
+
+                <span>PREMIUM-MINI CALCULATOR</span>
+
+                <div class="keyboard-hint">
+                    <kbd>ENTER</kbd>
+                    <span>to calculate</span>
+                </div>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
